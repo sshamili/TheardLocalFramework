@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Salenium Maven TestNG" parallel="methods"
+	thread-count="2">
+	<test name="Google Search">
+		<groups>
+			<run>
+				<include name="selenium.maven.testng.test" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.seleniummaventestng.tests.*" />
+		</packages>
+	</test>
+</suite>
+

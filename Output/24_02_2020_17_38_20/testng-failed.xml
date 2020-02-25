@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Salenium Maven TestNG]" parallel="methods">
+  <test thread-count="2" verbose="0" name="Google Search(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="selenium.maven.testng.test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.seleniummaventestng.tests.HelloWorld">
+        <methods>
+          <include name="helloWorldTestCase01"/>
+          <include name="helloWorldTestCase02"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.seleniummaventestng.tests.HelloWorld -->
+    </classes>
+  </test> <!-- Google Search(failed) -->
+</suite> <!-- Failed suite [Salenium Maven TestNG] -->

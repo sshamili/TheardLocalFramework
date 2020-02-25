@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.session.maven</groupId>
+  <artifactId>seleniummaventestng</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SeleniumMavenTestNG</name>
+  <description>Combined selenium maven and testNG example</description>
+  
+  <properties>
+		<testng.xml>TestNG.xml</testng.xml>
+		<maven.build.timestamp.format>dd_MM_yyyy_HH_mm_ss</maven.build.timestamp.format>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<!-- DEPENDENCIES INFO -->
+	<dependencies>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.11.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.11.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<!-- BUILD INFO -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+				<configuration>
+					<systemPropertyVariables>
+						<workspace.directory>${project.basedir}\</workspace.directory>
+						<output.directory>${project.basedir}\Output\${maven.build.timestamp}\</output.directory>
+						<log.directory>${project.basedir}\Output\${maven.build.timestamp}\Logs\</log.directory>
+					</systemPropertyVariables>
+					<workingDirectory>${project.basedir}\Output\${maven.build.timestamp}\</workingDirectory>
+					<reportsDirectory>${project.basedir}\Output\${maven.build.timestamp}\</reportsDirectory>
+					<suiteXmlFiles>
+						<suiteXmlFile>${testng.xml}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+		<!-- To use the plugin goals in your POM or parent POM -->
+	</build>
+</project>

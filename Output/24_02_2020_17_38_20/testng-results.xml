@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Salenium Maven TestNG" duration-ms="265" started-at="2020-02-24T17:38:38Z" finished-at="2020-02-24T17:38:38Z">
+    <groups>
+      <group name="selenium.maven.testng.test">
+        <method signature="HelloWorld.helloWorldTestCase01()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="helloWorldTestCase01" class="com.seleniummaventestng.tests.HelloWorld"/>
+        <method signature="HelloWorld.helloWorldTestCase02()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="helloWorldTestCase02" class="com.seleniummaventestng.tests.HelloWorld"/>
+      </group> <!-- selenium.maven.testng.test -->
+      <group name="selenium.maven.testng.test.01">
+        <method signature="HelloWorld.helloWorldTestCase01()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="helloWorldTestCase01" class="com.seleniummaventestng.tests.HelloWorld"/>
+      </group> <!-- selenium.maven.testng.test.01 -->
+      <group name="selenium.maven.testng.test.02">
+        <method signature="HelloWorld.helloWorldTestCase02()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="helloWorldTestCase02" class="com.seleniummaventestng.tests.HelloWorld"/>
+      </group> <!-- selenium.maven.testng.test.02 -->
+    </groups>
+    <test name="Google Search" duration-ms="265" started-at="2020-02-24T17:38:38Z" finished-at="2020-02-24T17:38:38Z">
+      <class name="com.seleniummaventestng.tests.HelloWorld">
+        <test-method status="FAIL" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="beforeSuite" is-config="true" duration-ms="1996" started-at="2020-02-24T17:38:36Z" finished-at="2020-02-24T17:38:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@229f66ed]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\Selenium_Automation\selenium\chromedriver\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Selenium_Automation\selenium\chromedriver\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService$Builder.usingDriverExecutable(DriverService.java:281)
+at com.seleniummaventestng.lib.WebDriverFactory.startChromeService(WebDriverFactory.java:67)
+at com.seleniummaventestng.base.BaseTest.beforeSuite(BaseTest.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="beforeMethod" is-config="true" duration-ms="219" started-at="2020-02-24T17:38:38Z" finished-at="2020-02-24T17:38:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:46)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at com.seleniummaventestng.lib.WebDriverFactory.getWebdriver(WebDriverFactory.java:58)
+at com.seleniummaventestng.lib.WebDriverFactory.setDriverForThread(WebDriverFactory.java:29)
+at com.seleniummaventestng.base.BaseTest.startWebDriverClient(BaseTest.java:51)
+at com.seleniummaventestng.base.BaseTest.beforeMethod(BaseTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="beforeMethod" is-config="true" duration-ms="219" started-at="2020-02-24T17:38:38Z" finished-at="2020-02-24T17:38:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:46)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at com.seleniummaventestng.lib.WebDriverFactory.getWebdriver(WebDriverFactory.java:58)
+at com.seleniummaventestng.lib.WebDriverFactory.setDriverForThread(WebDriverFactory.java:29)
+at com.seleniummaventestng.base.BaseTest.startWebDriverClient(BaseTest.java:51)
+at com.seleniummaventestng.base.BaseTest.beforeMethod(BaseTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="afterMethod()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-24T17:38:38Z" finished-at="2020-02-24T17:38:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.seleniummaventestng.base.BaseTest.afterMethod(BaseTest.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:536)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="afterMethod()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-24T17:38:38Z" finished-at="2020-02-24T17:38:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.seleniummaventestng.base.BaseTest.afterMethod(BaseTest.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:536)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="helloWorldTestCase01()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="helloWorldTestCase01" duration-ms="0" started-at="2020-02-24T17:38:38Z" finished-at="2020-02-24T17:38:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:46)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at com.seleniummaventestng.lib.WebDriverFactory.getWebdriver(WebDriverFactory.java:58)
+at com.seleniummaventestng.lib.WebDriverFactory.setDriverForThread(WebDriverFactory.java:29)
+at com.seleniummaventestng.base.BaseTest.startWebDriverClient(BaseTest.java:51)
+at com.seleniummaventestng.base.BaseTest.beforeMethod(BaseTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- helloWorldTestCase01 -->
+        <test-method status="SKIP" signature="helloWorldTestCase02()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="helloWorldTestCase02" duration-ms="0" started-at="2020-02-24T17:38:38Z" finished-at="2020-02-24T17:38:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:46)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at com.seleniummaventestng.lib.WebDriverFactory.getWebdriver(WebDriverFactory.java:58)
+at com.seleniummaventestng.lib.WebDriverFactory.setDriverForThread(WebDriverFactory.java:29)
+at com.seleniummaventestng.base.BaseTest.startWebDriverClient(BaseTest.java:51)
+at com.seleniummaventestng.base.BaseTest.beforeMethod(BaseTest.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- helloWorldTestCase02 -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.seleniummaventestng.tests.HelloWorld@366e2eef]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-02-24T17:38:39Z" finished-at="2020-02-24T17:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.seleniummaventestng.tests.HelloWorld -->
+    </test> <!-- Google Search -->
+  </suite> <!-- Salenium Maven TestNG -->
+</testng-results>

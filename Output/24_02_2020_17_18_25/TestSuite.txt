@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 2, Time elapsed: 2.54 s <<< FAILURE! - in TestSuite
+beforeSuite(com.seleniummaventestng.tests.HelloWorld)  Time elapsed: 2.18 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Selenium_Automation\selenium\chromedriver\chromedriver.exe
+
+beforeMethod(com.seleniummaventestng.tests.HelloWorld)  Time elapsed: 2.321 s  <<< FAILURE!
+java.lang.NullPointerException
+
+beforeMethod(com.seleniummaventestng.tests.HelloWorld)  Time elapsed: 2.321 s  <<< FAILURE!
+java.lang.NullPointerException
+
+afterMethod(com.seleniummaventestng.tests.HelloWorld)  Time elapsed: 2.321 s  <<< FAILURE!
+java.lang.NullPointerException
+
+afterMethod(com.seleniummaventestng.tests.HelloWorld)  Time elapsed: 2.321 s  <<< FAILURE!
+java.lang.NullPointerException
+
